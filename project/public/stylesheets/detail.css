@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    position: relative;
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #333;
+    padding: 7px;
+    align-items: center;
+  }
+  
+  .logo {
+    margin: auto;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+  
+  .menu {
+    padding: 10px;
+    font-size: 25px;
+  }
+  
+  .detail .person {
+    background-image: url(https://i.imgur.com/LUTP1d7.jpg);
+    overflow: auto;
+  }
+  
+  .detail .person img {
+    border-radius: 100%;
+    border: 10px solid #333;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    display: block;
+    margin-top: 100px;
+  }
+  
+  .detail .person .name {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .status {
+    text-align: center;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .status .urgent {
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    border-radius: 4px;
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .status .date {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .add {
+    position: absolute;
+    text-align: center;
+    height: 140px;
+    width: 140px;
+    color: #fff;
+    background-color: blue;
+    line-height: 140px;
+    font-size: 50px;
+    border-radius: 100%;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .story {
+    padding: 30px;
+    color: #888;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .list .item {
+    padding: 15px;
+    font-size: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  
