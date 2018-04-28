@@ -18,7 +18,7 @@
   <div class="container">
       <div class="detail">
         <div class="person">
-          <img src="/images/homeless1.jpg">
+          <img src="https://www298.lunapic.com/do-not-link-here-use-hosting-instead/152494147356596281?9166964922">
           <div class="name">David</div>
         </div>
         <div class="status">
@@ -39,6 +39,24 @@
           <div class="item">Dried Food</div>
         </div>
     </div>
+      <div class="addItem hide">
+        Item Name:
+        <input type="text" name='item' placeholder='item'>
+        <div class="btn">Add This Item</div>
+    </div>
   </div>
+  <script>
+  let toggle;
+document.querySelector('.add').addEventListener('click', function(e){
+  toggle = toggle || false;
+  toggle = !toggle;
+  if (toggle) {
+    document.querySelector('.addItem').classList.remove('hide');
+  } else {
+    document.querySelector('.addItem').classList.add('hide');
+  }
+  
+}, true);
+</script>
 </body>
 </html>
