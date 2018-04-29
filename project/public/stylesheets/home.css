@@ -110,3 +110,26 @@ header {
 .people-found .person .green {
   background-color: green;
 }
+
+.shelter-info {
+  padding: 20px;
+  display: flex;
+  font-size: 30px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 100px;
+}
+
+
+.shelter-info .left, .shelter-info .right {
+  flex-grow: 1;
+  width: 50%;
+}
+.shelter-info .location {
+  font-size: 20px;
+}
+.shelter-info .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

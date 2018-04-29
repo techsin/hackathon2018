@@ -72,12 +72,25 @@
     </div>
     <div class="people-found">
     <h2>Homeless Shelter near this location</h2>
-    
     </div>
+<div class="shelter-info">
+    <div class="left">
+        <div class="name">Mainchance</div>
+        <div class="location">120 East 32nd Street</div>
+    </div>
+    <div class="right">
+        <div class="phone">(212) 883-0680</div>
+    </div>
+</div>
   </div>
+
+
+
   <script>
-  let URL = 
-  fetch() 
+  let URL = "https://data.cityofnewyork.us/resource/kjtk-8yxq.json?$q='manhattan'";
+  fetch(URL).then(e=> {
+    e[0]
+  }) 
 </script>
 </body>
 </html>
