@@ -16,9 +16,27 @@
         <div class="logo">Homeless Tracker</div>
       </header>
       <div class="container">
-        <a href="/detail" class="camera">
-          <img src="/images/camera.jpg">
-        </a>
+      <video id="video"></video>   
+      <a href="/detail/abk" class="next-btn">Take a photo</a>
       </div>
+      <script>
+        let video = document.querySelector("#video");
+
+var constraints = {
+  audio: false,
+  video: true
+};
+
+function handleSuccess(stream) {
+  window.stream = stream; // make stream available to browser console
+  video.srcObject = stream;
+}
+
+function handleError(error) {
+  console.log('navigator.getUserMedia error: ', error);
+}
+
+navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
+      </script>
 </body>
 </html>
