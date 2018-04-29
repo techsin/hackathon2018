@@ -85,12 +85,15 @@
   </div>
 
 
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script>
   let URL = "https://data.cityofnewyork.us/resource/kjtk-8yxq.json?$q='manhattan'";
-  fetch(URL).then(e=> {
-    e[0]
-  }) 
+  let data = [];
+  axios.get(URL).then(e=> {
+    data = e.data[0]
+    console.log(data)
+
+  })
 </script>
 </body>
 </html>
